@@ -79,7 +79,7 @@ img {
 
 }
 
-.accordion:hover .content .my-input:checked ~ .content {
+.accordion:hover .content, .my-input:checked ~ .content {
     transform: scale(1);
     height: auto;
 }
