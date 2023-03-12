@@ -16,6 +16,13 @@ h1 {
     font-size: 40px;
 }
 
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 
@@ -34,7 +41,16 @@ input {
 }
 
 label {
-
+    border: solid blueviolet;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 10px 10px;
 }
 
 
