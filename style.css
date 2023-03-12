@@ -1,0 +1,73 @@
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100vh;
+    font-size: 40px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.content {
+
+    transform: scale(0);
+    transition: transform .3s;
+    display: block;
+
+
+}
+
+
+input {
+    display: none;
+}
+
+label {
+
+}
+
+
+.container:hover label::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+}
+
+
+
+
+
+input + label + .content { /* Скрываем содержимое */
+    transform: scale(0);
+    height: 0;
+}
+
+img {
+    width: 100%;
+
+}
+
+.accordion:hover .content, .my-input:checked ~ .content {
+    transform: scale(1);
+    height: auto;
+}
+
+
+
